@@ -3,7 +3,7 @@ title: "Flutterでよく使われるアーキテクチャやコアライブラ�
 emoji: "😻"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Flutter", "Dart"]
-published: false
+published: true
 ---
 
 開発の規模に応じて、使用するアーキテクチャやライブラリは変わります。今まで遭遇した様々なライブラリの中で、複数の選択肢があるものをメモしておきます。実質これ一択というものは省いています。
