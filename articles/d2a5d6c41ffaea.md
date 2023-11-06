@@ -1,5 +1,5 @@
 ---
-title: "Flutterでよく使われるアーキテクチャやコアライブラリについて【個人的まとめ】"
+title: "Flutterでよく使われるアーキテクチャやコアライブラリの選択肢【個人的まとめ】"
 emoji: "😻"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Flutter", "Dart"]
@@ -7,7 +7,7 @@ published: false
 ---
 
 開発の規模によって使用するアーキテクチャやライブラリが変わると思います。
-そこで、今まで様々な開発現場に入ってきた中でよく使用されていたものをメモとして残しておきます。
+そこで、今まで遭遇した様々なライブラリの中で、複数の選択肢がある場合の選択肢をメモしておきます。実質これ一択というものは省いています。
 
 「ここ間違ってない？」や「こういうのもあるよ！」などはガンガン指摘してください！勉強にさせてもらいます 😆
 
@@ -187,3 +187,24 @@ Navigator に比べて優れている点は 2 つあります。
 
 1. ネストした画面遷移を簡単に作れる。
 1. 画面に必要な引数の型を指定することができるので、タイプセーフに使える。
+
+## 端末内データ
+
+### sqflite
+
+https://pub.dev/packages/sqflite
+
+SQL を使痛い場合
+
+### shared_preferences
+
+https://pub.dev/packages/shared_preferences
+
+単純な key-value ストア
+
+### flutter_secure_storage
+
+https://pub.dev/packages/flutter_secure_storage
+
+セキュアなデータを保存したい場合。
+iOS では[キーチェーン](https://support.apple.com/ja-jp/guide/security/secb0694df1a/web)を使用する。こちらは同じデベロッパによる App のみアクセスできるようになっている。
